@@ -19,6 +19,7 @@ ENV R_PACKAGES="\
     caret \
     psych \
     pls \
+    vegan \
 " 
 
 RUN install2.r --error $R_PACKAGES
