@@ -16,7 +16,7 @@ The multivariate concrete dataset was retrieved from https://archive.ics.uci.edu
 
 ### SAS
 
-[Within the SAS directory, you will find implementations of PCA, Factor Analysis, Cononical Correlation Analysis and Redundancy Analysis, and PLS Regression.](sas)
+[Within the SAS directory, you will find implementations of PCA, Factor Analysis, NMDS, Cononical Correlation Analysis and Redundancy Analysis, and PLS Regression.](sas)
 
 ### References
 
