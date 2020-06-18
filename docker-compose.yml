@@ -1,0 +1,32 @@
+version: "3.5"
+
+services:
+  datascience:
+    image: "rocker/tidyverse:${TIDYVERSE_TAG}"
+    container_name: "${PROJECT_NAME}_datascience"
+    hostname: datascience
+    stop_grace_period: 60s
+    restart: always
+    build: 
+      dockerfile: Dockerfile
+      context: .
+      args:
+        TIDYVERSE_TAG: $TIDYVERSE_TAG
+    environment:
+      USER: $R_STUDIO_USER
+      PASSWORD: $R_STUDIO_PASSWORD
+      ROOT: "TRUE"
+      DISABLE_AUTH: "TRUE"
+    ports:
+      - ${R_STUDIO_PORT}:8787 
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    volumes:
+      - ./scripts:/home
+      
+networks:
+  default:
+      name: multivariate_analysis_examples
+      

@@ -1,0 +1,17 @@
+**/.env
+**/.Rproj.user
+**/.Rhistory
+**/.RData
+**/.nfs*
+**/.DS_Store
+**/__pycache__
+**/kitematic
+**/.rstudio
+**/.cache
+**/.local
+**/.virtualenvs
+**/.conda
+**/.bash*
+**/.keras
+**/.python_history
+**/core
