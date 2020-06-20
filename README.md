@@ -35,6 +35,8 @@ This repo contains several implementations of:
 
 [The R directory can be found here.](scripts/user/r)
 
+[The Python directory can be found here.](scripts/user/python)
+
 [The SAS directory can be found here.](scripts/user/sas)
 
 ### References
