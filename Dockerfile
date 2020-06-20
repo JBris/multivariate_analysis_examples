@@ -20,6 +20,7 @@ ENV R_PACKAGES="\
     psych \
     pls \
     vegan \
+    CCA \
 " 
 
 RUN install2.r --error $R_PACKAGES
