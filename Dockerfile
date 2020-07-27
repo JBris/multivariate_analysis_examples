@@ -15,6 +15,8 @@ ENV PYTHON_PACKAGES="\
 
 RUN pip3 install --upgrade pip && pip3 install --no-cache-dir $PYTHON_PACKAGES
 
+RUN pip3 install --no-cache-dir scikit-bio 
+
 ENV R_PACKAGES="\
     caret \
     psych \
